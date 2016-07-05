@@ -1,0 +1,769 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title>Area Clienti | Hosting Aruba</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="/style.css?v=29"/>
+<link rel="stylesheet" type="text/css" href="/FullOrder/styles/jquery-ui.css?v=10"/>
+<link rel="stylesheet" type="text/css" href="/top.css?v=19"/>
+<link rel="stylesheet" type="text/css" href="/Header.css?v=11"/>
+
+<script language="javascript" type="text/javascript" src="/js/jquery-1.5.2.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+vp3_startSess = new Date;
+</script>
+<script language="javascript" type="text/javascript" src="/js/top.min.js?V=1"></script>
+<!--[if lt IE 8]><style type="text/css">.navbar-mid li{width:150px;max-width:230px;text-align:center;} .liKBSearch{width:280px !important;max-width:280px !important;min-width:280px;} #kbLenteInput{margin-left:-10px;} .langselector li:hover ul{margin-top:-3px;}.caret{margin-top:-7px;} .domainChoice ul li ul {margin-left:0px !important}</style><script type="text/javascript" language="javascript">$.extend($.expr[':'],{hover: function(){}});</script><![endif]-->
+</head>
+<body>
+<table width="100%" height="99%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td>
+		
+<div class="headerBox">
+	<header class="header">
+  <div class="navbar-top">
+    <div class="headerContainer">
+		<ul class="langselector">
+			<li class="lifirst">
+				
+						<a class="first" href="https://managehosting.aruba.it/AreaUtenti.asp?Lang=IT">Italiano<b class="caret"></b></a>
+						<ul><li><a href="https://managehosting.aruba.it/AreaUtenti.asp?Lang=EN">English</a></li>
+						<li><a href="https://managehosting.aruba.it/AreaUtenti.asp?Lang=ES">Espa&ntilde;ol</a></li>						
+						</ul>
+			</li>
+		</ul>
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+			<li><a href="http://hosting.aruba.it/Home.aspx?Lang=it-IT">home</a></li>
+			<li class="borderListSeparator"><a href="https://webmail.aruba.it" target="_blank">webmail</a></li>
+			<li class="borderListSeparator"><a href="https://managehosting.aruba.it/Rinnovi/InsDatiRinnovo.asp?Lang=IT">rinnovi</a></li>
+			<li class="borderListSeparator"><a href="https://pagamenti.aruba.it/Home/Default.aspx?Lang=it" target="_blank">pagamenti</a></li>
+			<li class="borderListSeparator"><a href="https://managehosting.aruba.it/areaclienti" id="areaClientiOrange">area clienti</a></li>
+			<li class="borderListSeparator">
+                <a href="http://assistenza.aruba.it/Main/Default.aspx" target="_blank" id="assistenzaGreen">
+                assistenza 24/7
+			   </a>
+			</li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar-default" role="navigation">
+    <div class="headerContainer">
+        <div class="col-md-3">          
+          <a title="Home" href="https://managehosting.aruba.it/AreaUtenti.asp?Lang=IT">
+			<img id="hostingLogo" class="navbar-brand" src="/images/logo-aruba-hosting-domini_IT.png" alt="logo">
+		  </a>
+        </div>
+		</div>
+	  </nav>
+	</header>
+	</div>
+		<br/><br/>
+	</td>
+</tr>
+<style type="text/css">
+.ChangePasswordButtonFormProceed {
+	width:150px; background:#f86313;
+	background:-moz-linear-gradient(top, rgba(248,122,19,1) 0%, rgba(248,99,19,1) 100%);
+	background:-webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,122,19,1)), color-stop(100%, rgba(248,99,19,1)));
+	background:-webkit-linear-gradient(top, rgba(248,122,19,1) 0%, rgba(248,99,19,1) 100%);
+	background:-o-linear-gradient(top, rgba(248,122,19,1) 0%, rgba(248,99,19,1) 100%);
+	background:-ms-linear-gradient(top, rgba(248,122,19,1) 0%, rgba(248,99,19,1) 100%);
+	background:linear-gradient(to bottom, rgba(248,122,19,1) 0%, rgba(248,99,19,1) 100%);
+	background-clip:padding-box;
+	border-radius:3px; moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-box-shadow:0px 2px 0px 0px #BA500F;
+	-moz-box-shadow:0px 2px 0px 0px #BA500F;
+	box-shadow:0px 2px 0px 0px #BA500F;
+	text-shadow:0px -1px 1px rgba(0,0,0,0.3); color:#ffffff;
+	text-decoration:none;
+	display:inline-block;
+	cursor:pointer; padding:6px 12px;
+	font-size:14px; font-weight:normal;
+	line-height:1.428571429;
+	text-align:center; white-space:nowrap;
+	vertical-align:middle; -webkit-user-select:none;
+	-moz-user-select:none; -ms-user-select:none;
+	-o-user-select:none; user-select:none;
+	margin:auto; border:none;
+}
+.ChangePasswordButtonFormProceed:active {
+	margin-top:2px;	margin-bottom:-2px;
+}
+#ChangePasswordSuggestedModal {
+	position:fixed;	top:0px;
+	left:0px; height:100%;
+	width:100%;	
+	
+	filter: Alpha(Opacity=50);
+	
+	background: #aaaaaa repeat-x 0px 0px;
+	background-color:rgba(0,0,0,0.5);display:none;
+	
+	z-index:100000;
+	
+}
+#ChangePasswordSuggestedModalBox {
+	margin:auto; position:relative; background-color:white;
+	width:500px; height:270px; top:35%;
+	font-family:Arial;
+	filter: Alpha(Opacity=100) !important;	
+	z-index:100001;
+}
+#ChangePasswordDescription {
+	margin:25px; font-size:17px;
+	text-align:left; padding-top:30px;
+}
+#ChangePasswordBoxFormProceed {
+	width:100%;	text-align:center;
+}
+#ChangePasswordClose {
+	position:absolute;
+	font-size:20px;
+	font-weight:bold;
+	text-align:right;
+	width:100%;
+	margin:10px 0px 10px -10px;
+}
+#ChangePasswordCloseButton {
+	cursor:pointer;
+}
+</style>
+<div id="ChangePasswordSuggestedModal">
+	<div id="ChangePasswordSuggestedModalBox">
+		<div id="ChangePasswordClose"><span id="ChangePasswordCloseButton" onclick='$("#ChangePasswordSuggestedModal").hide();'>X</span></div>
+		<div id="ChangePasswordDescription">
+			<b><strong>Attenzione</strong></b>
+			<br/><br/>
+			<span id="txtPasswordSuggestion">La password della login {0} è scaduta e deve essere aggiornata.</span>
+			<br/><br/>
+			<span>E' necessario procedere al cambio della password prima di accedere all'area clienti.</span>
+		</div>
+		<div id="ChangePasswordBoxFormProceed">
+			<form action="https://gestioneaccessi.aruba.it/User-Detect.ashx" method="post" id="ChangePasswordForm">
+				<input type="hidden" name="Username" id="ChangePasswordForcedLogin" />
+				<input type="hidden" name="Token" id="ChangePasswordForcedToken" />
+				<input type="hidden" name="UserAction" value=",3283,5200,4947,5390,5150,5151,3920,4850,5865,5635,5950,5661,5586,5000" />
+				<input type="hidden" name="Company" value=",2401" />
+				<input type="hidden" name="Language" id="ChangePasswordForcedToken" value=",3577,4200"/>
+				<input type="hidden" name="RedirectUrl" id="ChangePasswordForcedReturnUrl" value=",5096,5800,5916,5488,5750,2958,2303,2350,5559,4753,5500,4947,5047,5050,5304,5439,5750,5916,5145,5500,5253,2254,4850,5814,5733,4900,4947,2254,5250,5916,2303,3250,5814,4949,4850,4335,5684,5050,5610,5684,5250,2346,4753,5750,5712,3087,3800,4947,5390,5150,3111,3577,4200" />
+				<button class="ChangePasswordButtonFormProceed">Procedi</button>
+			</form>
+		</div>
+	</div>
+</div>
+<input type="hidden" id="txtPasswordSuggestionOriginal" value="La password della login {0} è scaduta e deve essere aggiornata." />
+<script language="javascript" type="text/javascript" src="/js/Left.min.js?v=13"></script>
+<td height="100%" align="center" valign="top">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="150" height="100%" valign="top" id="leftMenuCell">
+	<table border="0" cellspacing="0" cellpadding="0" class="leftMenuSpace left_tbl leftMenuDefaultTab">
+        <tr class="trHeaderLeftMenu">
+		   <td class="tdHeaderLeftMenu">
+				<span class="main_titolo">Gestione</span>
+				<span class="rpExpandHandle"></span>
+			</td>
+        </tr>
+		<tr>
+			<td>
+				<a href="/?Lang=IT" class="left_menu" id="defaultLeftItem">Area Clienti</a>
+			</td>
+        </tr>
+		<tr>
+			<td>
+				<a href="https://supersite.aruba.it/CustomerArea/Login.aspx?Lang=IT" class="left_menu">Area Clienti SuperSite</a>
+			</td>
+        </tr>
+		<tr>
+			<td>
+				<a href="https://managehosting.aruba.it/Domini/SpedisciDatiDominio.asp?Lang=IT" class="left_menu">Recupero password</a>
+			</td>
+        </tr>
+        <tr>
+			<td>
+				<a href="https://admin.aruba.it/PannelloAdmin/Login.aspx?Lang=IT" target="_blank" class="left_menu">Pannello di controllo</a>
+			</td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="http://mysql.aruba.it/login/index.php?lang=it-iso-8859-1" target="_blank" class="left_menu">Gestione Database MySql</a>
+		  </td>
+        </tr>
+        <tr>
+		  <td>
+			<a href="http://mssql.aruba.it/" target="_blank" class="left_menu">Gestione Database MsSql</a>
+		  </td>
+        </tr>
+         <tr>
+			<td>
+				<a href="https://managehosting.aruba.it/FrmLogonAnagrafica.asp?Lang=IT" class="left_menu">Modifica dati anagrafici</a>
+			</td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="https://managehosting.aruba.it/host_trasf/ModificaRegistranteDominio.asp?Lang=IT" class="left_menu">Modifica intestatario dominio</a>
+		  </td>
+        </tr>
+        <tr>
+			<td>
+				<a href="https://managehosting.aruba.it/Conversioni/Conversioni.asp?Lang=IT" class="left_menu">Modifica servizio</a>
+			</td>
+        </tr>
+        <tr>
+		  <td>
+			<a href="/Sezione_Moduli.asp?Lang=IT" class="left_menu">Modulistica</a>
+		  </td>
+        </tr>
+      </table>
+	  <table width="145" border="0" cellspacing="0" cellpadding="0" class="leftMenuSpace left_tbl">
+        <tr class="trHeaderLeftMenu">
+		   <td class="tdHeaderLeftMenu">
+				<span class="main_titolo">Rinnovi</span>
+				<span class="rpExpandHandle"></span>
+			</td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="https://managehosting.aruba.it/Rinnovi/InsDatiRinnovo.asp?Lang=IT" class="left_menu">Rinnovo Dominio e Hosting</a>
+		  </td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="https://managehosting.aruba.it/net/MySql/MySql.aspx?Lang=IT" class="left_menu">Rinnovo database MySql</a>
+		  </td>
+        </tr>
+        <tr>
+		  <td>
+			<a href="https://managehosting.aruba.it/net/MsSql/MsSql.aspx?Lang=IT" class="left_menu">Rinnovo database MsSql</a>
+		  </td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="https://fotoalbum.aruba.it/Login_Area_Utenti.aspx" target="_blank" class="left_menu">Rinnovo FotoAlbum</a>
+		  </td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="http://keyposition.aruba.it/it/Home.aspx" target="_blank" class="left_menu">Rinnovo KeyPosition</a>
+		  </td>
+        </tr>
+      </table>
+	  <table width="145" border="0" cellspacing="0" cellpadding="0" class="leftMenuSpace left_tbl">
+        <tr class="trHeaderLeftMenu">
+		   <td class="tdHeaderLeftMenu">
+				<span class="main_titolo">Pagamenti e Fatture</span>
+				<span class="rpExpandHandle"></span>
+			</td>
+        </tr>
+         <tr>
+			<td>
+				<a href="https://pagamenti.aruba.it/Home/Default.aspx?Lang=it" target="_blank" class="left_menu">Pagamenti</a>
+			</td>
+        </tr>
+		<tr>
+		  <td>
+			<a href="#Pay" id="PagamentoRapido" class="left_menu">Pagamento rapido</a>
+		  </td>
+        </tr>
+        <tr>
+		  <td>
+			<a href="https://fatture.aruba.it/Default.asp?Lang=IT" target="_blank" class="left_menu">Fatture</a>
+		  </td>
+        </tr>
+      </table>
+      </td>
+    <td width="100%" height="100%" valign="top">
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function() {
+			$(document).keydown(function (e) {
+				if (e.which == 13) {
+					var login = $("#LoginAreaUtenti").val(), pwd = $("#PasswordAreaUtenti").val();
+					if(login !== "" && pwd !== "") {
+						$('#formLoginUtenti').submit();
+					}
+				}
+			});
+			$("#submitFormCustomerArea").click(function() {
+				$('#formLoginUtenti').submit();
+			});
+			$('#formLoginUtenti').submit(function() {
+				var login = $("#LoginAreaUtenti").val(), pwd = $("#PasswordAreaUtenti").val();
+				var success = true;
+				$.ajax({
+				  url: "https://managehosting.aruba.it/in/checkPasswordExpired.asp",
+				  type: "POST",
+				  async: false,
+				  data: { login:login, password:pwd },
+				  dataType: "html"
+				}).done(function( res ) {	  
+				  var responseArray = res.split("|");
+				  if(responseArray.length < 1){
+					success = false;
+				  }
+				  else if(responseArray.length == 1) {
+					success = (responseArray[0].toUpperCase()==="TRUE");
+				  }
+				  else {
+					success = (responseArray[0].toUpperCase()==="TRUE");
+				  }
+				  if(!success){
+					var pwdSugg = $("#txtPasswordSuggestion");
+					pwdSugg.text(pwdSugg.text().replace("{0}", login));
+					$("#ChangePasswordSuggestedModal").show();
+					$("#ChangePasswordForcedLogin").val(responseArray[1]);
+					$("#ChangePasswordForcedToken").val(responseArray[2]);
+				}
+				});
+				return success;
+			});
+		});
+	</script>
+	<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="tbl_cornice"> 
+	  <tr class="trHeaderLeftMenu">
+		   <td class="tdHeaderLeftMenu" colspan="3">
+		<span class="main_titolo">Area Clienti</span></td> 
+	  </tr>
+	  <tr> 
+		<td height="1" colspan="2" bgcolor="#7a7a7a"></td> 
+	  </tr> 
+	  <tr>
+		<td>
+			<form action="https://managehosting.aruba.it/areaclienti/check.asp" method="post" name="LoginUtenti" id="formLoginUtenti">
+			<input type="hidden" name="Lang" value="IT" />
+			<input type="hidden" name="RedirectTo" value="" />
+			<table width="100%"  border="0" cellspacing="0" cellpadding="0"> 
+			<tr> 
+			  <td valign="top" colspan="3">
+				<p class="loginParagraphDescription">Inserisci nei campi sottostanti il nome <b>UTENTE</b> e la <b>PASSWORD</b> e poi clicca sul pulsante ACCEDI</p>
+			  </td> 
+			</tr> 
+			<tr height="41px"> 
+				<td class="tblLoginTdLeft">Login</td> 
+				<td class="tblLoginTdCenter"><input class="formLoginInput" type="text" autocomplete="true" name="Login" id="LoginAreaUtenti" maxlength="63"/></td>
+				<td class="tblLoginTdRight">@aruba.it</td> 
+			  </tr>
+			  <tr height="41px"> 
+				<td class="tblLoginTdLeft">Password</td> 
+				<td class="tblLoginTdCenter"><input class="formLoginInput" type="Password" name="Password" id="PasswordAreaUtenti" maxlength="4091"/></td>
+				<td class="tblLoginTdRight"></td> 
+			  </tr> 
+			  <tr>
+				<td class="tblLoginTdLeft"></td> 
+				<td class="tblLoginTdCenter loginRecoverDataArea">
+					<a href="https://managehosting.aruba.it/Domini/spediscidatidominio.asp" tabindex="-1">Recupera i tuoi dati</a>
+					oppure <a href="http://account.aruba.it/Startarea/Aruba/NewCustomerReg/IT/" tabindex="-1">Registrati</a>
+				</td>
+				<td class="tblLoginTdRight"></td>
+			  </tr> 
+		  </table>
+		  </form>
+		  </td> 
+	  </tr> 
+	  <tr> 
+		<td colspan="3" class="tableFooter">
+			<a href="#" class="buttonGreenFat" id="submitFormCustomerArea"><span style="width:95px;">ACCEDI</span></a>
+		</td>
+		</tr>
+	</table>
+
+</td>
+<td width="5" valign="top"><img src="/image_main/main_separatore_5_5.gif" width="5" height="5"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td height="30">
+
+    <table width="100%" border="0" cellspacing="10" cellpadding="0" id="Table3">
+        <tr>
+            <td align="center">            
+                <link href='//fonts.googleapis.com/css?family=Lato:400,700,300,300italic,700italic,400italic' rel='stylesheet' type='text/css' />
+		<div class="chatslider chatslider_time" id="aControlIDon">
+            <div class="chatslider-tab-up"></div>
+            <div class="chatslider-tab-down"></div>
+        	<div class="lang-it chatOn">
+                <a onClick="newWindow = window.open('https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1', 'LiveChat1','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=560,height=600'); if (newWindow) { newWindow.focus(); newWindow.opener=window; } return false;" title="Cliccare per aprire un Ticket." target="_blank" href="https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1">	
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Ciao!</strong></span>		
+                        <span class="line">› Hai domande su prodotti o procedure?</span>			
+                        <span class="line">› Sono qui per aiutarti.</span>
+                    </p>	
+                    <div class="chatslider-smartbutton">			
+                        <div class="text-form">Clicca qui per chattare</div>
+                        <div class="text-button">Invia</div>		
+                    </div>
+                </a>
+            </div>
+            <div class="lang-it chatOff">
+                <a title="Non ci sono operatori attualmente disponibili." target="_blank" href="https://commerciale.aruba.it/Main/frmNewTicket.aspx">
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Ciao!</strong></span>		
+                        <span class="line">La chat non è attiva al momento.</span>			
+                        <span class="line">Puoi contattarci all'indirizzo:</span>
+                    </p>	
+                </a>			
+                <div class="chatslider-linkbutton">
+                    <a href="http://assistenza.aruba.it" target="_blank" title="Assistenza Aruba">http://assistenza.aruba.it</a>
+                </div>
+            </div>
+            <div class="lang-en chatOn">
+                <a onClick="newWindow = window.open('https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1', 'LiveChat1','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=560,height=600'); if (newWindow) { newWindow.focus(); newWindow.opener=window; } return false;" title="Click to open a Ticket." target="_blank" href="https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1">	       
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Hello!</strong></span>		
+                        <span class="line">› Got any questions on products or procedures?</span>			
+                        <span class="line">› I'm here to help you.</span>
+                    </p>		
+                    <div class="chatslider-smartbutton">			
+                        <div class="text-form">Click here to start chatting</div>
+                        <div class="text-button">Submit</div>		
+                    </div>
+                </a>		
+            </div>
+            <div class="lang-en chatOff">
+                <a title="•	The Chat is not available at the moment." target="_blank" href="https://commerciale.aruba.it/Main/frmNewTicket.aspx">
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Hello!</strong></span>		
+                        <span class="line"> The Chat is not available at the moment.</span>			
+                        <span class="line">You can contact us at:</span>
+                    </p>	
+                </a>			
+                <div class="chatslider-linkbutton">
+                    <a href="http://support.aruba.it" target="_blank" title="Aruba Assistance">http://support.aruba.it</a>
+                </div>
+            </div>
+            <div class="lang-es chatOn">
+                <a onClick="newWindow = window.open('https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1', 'LiveChat1','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=560,height=600'); if (newWindow) { newWindow.focus(); newWindow.opener=window; } return false;" title="Haz clic aquí para chatear." target="_blank" href="https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1">         
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Hola!</strong></span>		
+                        <span class="line">› ¿Tienes preguntas sobre productos o procedimientos?</span>			
+                        <span class="line">› Estoy aquí para ayudarte.</span>
+                    </p>	
+                    <div class="chatslider-smartbutton">			
+                        <div class="text-form">Haz clic aquí para chatear</div>
+                        <div class="text-button">Envía</div>		
+                    </div>	
+                </a>		
+            </div>
+            <div class="lang-es chatOff">
+                <a title="El chat no está activo en este momento." target="_blank" href="https://commerciale.aruba.it/Main/frmNewTicket.aspx">
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>¡Hola!</strong></span>		
+                        <span class="line">El chat no está activo en este momento</span>			
+                        <span class="line">Puedes contactarnos en la dirección:</span>
+                    </p>	
+                </a>			
+                <div class="chatslider-linkbutton">
+                    <a href="http://assistenza.aruba.it" target="_blank" title="Assistenza Aruba">http://assistenza.aruba.it</a>
+                </div>
+            </div>
+            <div class="lang-de chatOn">
+                <a onClick="newWindow = window.open('https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1', 'LiveChat1','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=560,height=600'); if (newWindow) { newWindow.focus(); newWindow.opener=window; } return false;" title="Klicken Sie hier, um mit dem Chat zu beginnen." target="_blank" href="https://commerciale.aruba.it/Chat/frmClientPreChat.aspx?config=1"> 
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Hallo!</strong></span>		
+                        <span class="line">› Haben Sie Fragen zu Produkten oder Verfahren?</span>			
+                        <span class="line">› Ich bin hier, um Ihnen zu helfen.</span>
+                    </p>		
+                    <div class="chatslider-smartbutton">			
+                        <div class="text-form">Klicken Sie hie</div>
+                        <div class="text-button">Einreichen</div>		
+                    </div>
+                </a>		
+        	</div>
+            <div class="lang-de chatOff">
+                <a title="Der Chat ist im Moment nicht verfügbar." target="_blank" href="https://commerciale.aruba.it/Main/frmNewTicket.aspx">
+                    <p class="chatslider-text">			
+                        <span class="header"><strong>Hallo!</strong></span>		
+                        <span class="line">Der Chat ist im Moment nicht verfügbar.</span>			
+                        <span class="line">Sie können uns unter</span>
+                    </p>	
+                </a>			
+                <div class="chatslider-linkbutton">
+                    <a href="http://support.aruba.it" target="_blank" title="Aruba Assistance">http://support.aruba.it</a><br />kontaktieren.
+                </div>
+            </div>	
+		</div>
+    <script language="javascript">
+$(function(){
+    setTimeout(function () {
+		if (document.cookie.replace(/(?:(?:^|.*;\s*)OpenChatControl\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
+			var $verty = $(".chatslider");
+			if($verty.delay) {
+				$verty.delay(10000).animate({
+				  bottom: parseInt($verty.css('bottom'),10) == 174 ?
+					$verty.outerHeight() :
+					174
+				},1000);
+			}
+			$( ".chatslider-tab-up" ).hide(5);
+			var tabDown = $( ".chatslider-tab-down" );
+			if(tabDown.delay) {
+				tabDown.hide(5).delay(12000).fadeIn(5);
+			}
+			document.cookie = "OpenChatControl=true;";
+		}
+	});
+		$(document).ready(function(){
+			$(".chatslider").css('display', 'block');
+		});
+        $(".chatslider-tab-up").click(function () {
+            var $verty = $(".chatslider");
+			if($verty.animate) {
+				$verty.animate({
+				  bottom: parseInt($verty.css('bottom'),10) == 174 ?
+					$verty.outerHeight() :
+					174
+				});
+			}
+            $( ".chatslider-tab-up" ).hide();
+            $( ".chatslider-tab-down" ).show();
+        });
+        
+        $(".chatslider-tab-down").click(function () {
+            var $verty = $(".chatslider");
+			if($verty.animate) {
+				$verty.animate({
+				  bottom: parseInt($verty.css('top'),10) == 174 ?
+					-$verty.outerHeight() :
+					0
+				});
+			}
+            $( ".chatslider-tab-down" ).hide();
+            $( ".chatslider-tab-up" ).show();
+        });
+		
+    if (navigator.userLanguage) {theAgent = navigator.userLanguage;}
+    else {theAgent = navigator.language;}
+    if (theAgent.indexOf('it') != -1) {
+        $(".lang-it").show();
+        $(".lang-es").hide();
+        $(".lang-en").hide();
+        $(".lang-de").hide();}
+    if (theAgent.indexOf('en') != -1) {
+        $(".lang-en").show();
+        $(".lang-es").hide();
+        $(".lang-it").hide();
+        $(".lang-de").hide();}
+     if (theAgent.indexOf('es') != -1) {
+        $(".lang-es").show();
+        $(".lang-it").hide();
+        $(".lang-en").hide();
+        $(".lang-de").hide();}
+     if (theAgent.indexOf('de') != -1) {
+        $(".lang-de").show();
+        $(".lang-es").hide();
+        $(".lang-en").hide();
+        $(".lang-it").hide();}
+     if (theAgent.indexOf('fr') != -1) {
+        $(".lang-en").show();
+        $(".lang-es").hide();
+        $(".lang-de").hide();
+        $(".lang-it").hide();}
+});
+</script>
+            </td>
+        </tr>
+    </table>
+
+<script type="text/javascript" language="javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery_blockUI.js"></script>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        $("#dlgMessagePagRapido").dialog({
+            bgiframe:true, autoOpen:false, resizable:false, height:260, width:360, modal:true
+        });
+        $('#PagamentoRapido').click(function (e) {
+            $("#divError").hide();
+            $("#IDOrdine").val("");
+            $("#Opt").attr('selected', 'selected');
+            $("#dlgMessagePagRapido").dialog("open");
+			e.preventDefault();
+        });
+    });
+	function OnSubmitForm() {
+        var risultato = false;
+        if (($("#OptPayPal").attr("selected") == true || $("#OptBancaSella").attr("selected") == true) && $("#IDOrdine").val() != "") {
+            $("#divError").hide();
+            document.myformPagamRapido.action = "/RedirectToPay.asp";
+            risultato = true;
+        } else if ($("#OptPayPal").attr("selected") == false && $("#OptBancaSella").attr("selected") == false && $("#IDOrdine").val() == "") {
+            $("#divError").show();
+            $("#labelError").html('Deve essere inserito un id Ordine e selezionato un tipo di pagamento')
+        }
+        else if ($("#OptPayPal").attr("selected") == false && $("#OptBancaSella").attr("selected") == false) {
+            $("#divError").show();
+            $("#labelError").html('Deve essere selezionato un tipo di pagamento')
+        }
+        else if ($("#IDOrdine").val() == "") {
+            $("#divError").show();
+            $("#labelError").html('Deve essere inserito un id Ordine')
+        }        
+        return risultato;
+    }
+</script>
+
+<div id="dlgMessagePagRapido" style="display:none" title="<span style='margin-left: 10px; font-size: 16px;'>Pagamento Rapido</span>">
+    <form id="myformPagamRapido" name="myformPagamRapido" onsubmit="return OnSubmitForm();">
+		<input type="hidden" name="Lingua" value='IT'/>
+        <table width="100%" cellspacing="2" cellpadding="0" style="margin-top: 20px; margin-bottom: 10px;">
+            <tr style="height: 40px;">
+	            <td width="50%" align="right">Inserisci il numero Ordine:<br>(es. 987654 o MO9876)</td>
+	            <td width="50%" align="left"><input type="text"  size="20" maxlength="10" id="IDOrdine" name="IDordine" style="height: 18px;"></td>
+            </tr>
+            <tr style="height: 60px;">
+	            <td width="50%" align="right">Modalità di pagamento:</td>
+	            <td width="50%" align="left">
+                    <select name="TipoPagamento" style="height: 22px; width: 144px;">
+			            <option id="Opt" selected>Scegli</option>
+			            <option id="OptPayPal" value="PayPal">Paypal</option>
+                        <option id="OptBancaSella" value="BancaSella">Carta di credito</option>
+			        </select>
+                </td>
+            </tr>
+		</table> 
+	</form>
+    <div style="display:none;" id="divError"><span id="labelError" style="color:Red;margin-bottom:15px;text-align:center"></span></div>
+    <div style="text-align: right; margin-right: 24px;">
+        <a href="#" class="buttonGreen" onclick="javascript:$('#myformPagamRapido').submit();"><span>PROCEDI</span></a>
+    </div>
+</div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="separatore_5_orizzontale">&nbsp;</td>
+  </tr>
+  <tr>
+		<td width="100%">
+			<!--<div class="footer">
+				<img src="/Images/grayLineFull.png" alt="greyLine" />
+				
+					<img src="/Images/logo-aruba-group.png" alt="logo" class="arubaGroupLogo" /><span class="copyrightBottomDescription">Copyright &copy;2016 Aruba S.p.A.- P.I. 01573850516 - All rights reserved </span>
+
+               
+				<img src="/Images/grayLineFull.png" alt="greyLine" />
+			</div>-->
+
+
+    <!--        <div class="footer">
+
+<span style="border-top: 1px solid #CCC;  display: inline-block;  width: 10%;  max-width: 200px;  min-width: 50px;  margin-left: 4px;  margin-right: 4px;">&nbsp;</span>
+				<img src="/Images/logo-aruba-group.png" alt="logo"  class="arubaGroupLogo"  /><span class="copyrightBottomDescription">Copyright &copy; 2016 Aruba S.p.A.- P.I. 01573850516 - All rights reserved</span>
+
+                <span style="border-top: 1px solid #CCC;  display: inline-block;  width: 10%;  max-width: 200px;  min-width: 50px;  margin-left: 4px;  margin-right: 4px;">&nbsp;</span>
+		</div>-->
+
+            <div class="footer">
+				<img src="/Images/grayLineFull.png" alt="greyLine" />
+				
+					<img src="/Images/logo-aruba-group.png" alt="logo" class="arubaGroupLogo" /><span class="copyrightBottomDescription">Copyright &copy;2016 Aruba S.p.A.- P.I. 01573850516 - All rights reserved </span>
+
+               
+				<img src="/Images/grayLineFull.png" alt="greyLine" />
+			</div>
+
+           
+		</td>
+	</tr>
+</table>
+      
+<script language="javascript">
+	var cl_chn='Accesso-area-Clienti';
+</script>
+      
+      
+<!-- Inizio Codice Conversion Lab -->
+<script language="JavaScript" type="text/javascript" >
+   var us='d645920e395fedad7bbbed0eca3fe2e02';
+</script>
+<script language="JavaScript" src="https://tracks.arubamediamarketing.it/track/tsend.js" type="text/javascript"></script>
+<noscript>
+   <a href="http://www.arubamediamarketing.it/">
+      
+        <img src="https://tracks.arubamediamarketing.it/track/cl.gif?md5=d645920e395fedad7bbbed0eca3fe2e0&channel=Accesso-area-Clienti">
+      
+   </a>
+</noscript>
+<!-- Fine Codice Conversion Lab -->
+
+<!-- Google Universal Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47251331-2', 'aruba.it');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<!-- Fine Codice Google -->
+
+<!-- Piwik -->
+ <script type="text/javascript">
+     var _paq = _paq || [];
+     _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+     _paq.push(["trackPageView"]);
+     _paq.push(["enableLinkTracking"]);
+
+     (function () {
+         var u = (("https:" == document.location.protocol) ? "https" : "http") + "://wa.aruba.it/";
+         _paq.push(["setTrackerUrl", u + "piwik.php"]);
+         _paq.push(["setSiteId", "7"]);
+         var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0]; g.type = "text/javascript";
+         g.defer = true; g.async = true; g.src = u + "piwik.js"; s.parentNode.insertBefore(g, s);
+     })();
+ </script>
+ <noscript>
+ <img src="https://wa.aruba.it/piwik.php?idsite=7&amp;rec=1" style="border:0" alt="" />
+ </noscript>
+ <!-- End Piwik -->
+
+ <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1007511819261667');
+fbq('track', 'PageView');
+
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1007511819261667&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<!-- Google Code per il tag di remarketing -->
+<script type="text/javascript">
+var google_conversion_id = 995810289;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/995810289/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- Fine Google Code per il tag di remarketing -->
+<script type="text/javascript" src="/cookies/jquery.cookiesdirective.min.js?v=3"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.cookiesDirective({privacylang:'IT'});
+	});
+</script>
+</body>
+</html>
