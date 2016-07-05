@@ -82,5 +82,7 @@ div[data-role=page] {
 
 .aruba-button-green {
 	background: url(../img/button-effect-green.png) no-repeat;
+	line-height: 12px;
+	color: #FFFFFF;
 }
 
