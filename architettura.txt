@@ -1,0 +1,7 @@
+- Liferay 6.2
+- Java 8
+- Service Builder (Hibernate)
+- Apache CXF 
+- MySQL
+- Primefaces 6
+- JSF 2.2

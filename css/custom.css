@@ -80,3 +80,7 @@ div[data-role=page] {
 	text-shadow: none;
 }
 
+.aruba-button-green {
+	background: url(../img/button-effect-green.png) no-repeat;
+}
+
