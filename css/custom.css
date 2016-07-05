@@ -52,3 +52,13 @@ div[data-role=page] {
 .aruba-footer {
 	background: #F2F2F1; 
 }
+
+.aruba-login-section {
+	height: 50%; 
+	width: 50%; 
+	margin: auto; 
+	position: relative;
+	border-radius: 25px;
+	border: 1px solid;
+	padding: 2em;
+}
