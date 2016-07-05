@@ -3,6 +3,44 @@
 	padding: 1em;
 }
 
+.aruba-header-top {
+    height: 30px;
+    min-width: 620px;
+    font-size: 12px;
+    border-bottom: 1px solid #303030;
+    background-color: #000;
+}
+
+.aruba-header-top-container{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+
+.aruba-header-top-menu-right{
+	margin: 0;
+    float: right;
+    list-style: none;
+}
+
+.aruba-menu-nav-right{
+	padding-left: 0px;
+    margin: 0px;
+}
+.aruba-menu-nav-right > li {
+    float: left;
+    position: relative;
+    display: block;
+}
+.aruba-header-top-container > div > ul {
+    padding-top: 4px;
+}
+.aruba-menu-separator{
+	background: url("../img/separator.png") no-repeat center left;
+}
 .aruba-content {
 	background: white;
 }
