@@ -69,6 +69,7 @@
 .ui-body-c .ui-link {
     color: #2489ce;
     font-weight: normal;
+	text-decoration: none;
 }
 
 .ui-body-c {
