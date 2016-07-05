@@ -3,6 +3,10 @@
 	padding: 1em;
 }
 
+div[data-role=page] {
+	background: #FFFFFF;
+}
+
 .aruba-header-top {
     height: 30px;
     min-width: 620px;
