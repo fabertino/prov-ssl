@@ -79,6 +79,10 @@ div[data-role=page] {
 	color: white;
 	font-weight: bold;
 	display: none;
+	margin-bottom: .5em;
+	padding: .2em;
+	padding-left: .5em;
+	border-radius: 25px;
 }
 
 .ui-body-c .ui-link {

@@ -1,35 +1,37 @@
 
 function redirect() {
-	$('#login').submit();
 	if(validate()){
 		var user = $('#email').val();
 		var userEmail = 'user@aruba.it';
 		if(user == userEmail){
 			$(location).attr('href', 'index.html');
 		} else {
-			$(location).attr('href', 'dashboard.html');
+			$(location).attr('href', '..\dashboard\dashboard.html');
 		}
-	} else {
-		alert("Controlla i dati immessi per effettuare l'accesso: tutti i campi sono obbligatori!");
 	}
 }
 
 function validate() {
-	var user = $('#email').val();
+	var email = $('#email').val();
 	var pwd = $('#pwd').val();
-	if (user === undefined || user == null) {
-		return false;
-	} else if ($.trim(user) == '' || !isEmail(pwd)) {
-		return false;
+	var isValid = true;
+	
+	$('.aruba-error').slideUp('slow');
+	
+	if ($.trim(email) == '') {
+		throwError('error-email', 'Inserire l\'indirizzo email utilizzato in fase di registrazione');
+		isValid = false;
+	} else if (!isEmail(email)) {
+		throwError('error-email', 'Inserire un indirizzo email valido');
+		isValid = false;
 	}
 	
-	if (pwd === undefined || pwd == null) {
-		return false;
-	} else if ($.trim(pwd) == '') {
-		return false;
+	if (pwd === undefined || pwd == null || $.trim(pwd) == '') {
+		throwError('error-pwd', 'Inserisci la password utilizzata in fase di registrazione');
+		isValid = false;
 	}
 	
-	return true;
+	return isValid;
 }
 
 function isEmail(email) {
@@ -40,5 +42,6 @@ function isEmail(email) {
 function throwError(target, msg) {
 	var _target = '#' + target;
 	$(_target).html(msg);
-	$(_target).css('display', 'block');
+	$(_target).slideDown('slow');
+	//$(_target).css('display', 'block');
 }
