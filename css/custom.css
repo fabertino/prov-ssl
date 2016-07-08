@@ -74,6 +74,14 @@ div[data-role=page] {
 	padding: 2em;
 }
 
+.aruba-error {
+	width: 100%;
+	background: red;
+	color: white;
+	font-weight: bold;
+	display: none;
+}
+
 .ui-body-c .ui-link {
     color: #2489ce;
     font-weight: normal;

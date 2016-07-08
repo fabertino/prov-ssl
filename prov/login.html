@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="..\css\custom.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+		<script type="text/javascript" src="..\js\login.js"></script>
 	</head> 
 	<body> 
 
@@ -40,16 +41,20 @@
 
 		<div data-role="content" class="aruba-content">	
 			<br/><br/><br/><br/>
+			<div id="error-generic" class="aruba-error"></div>
+			
 			<div class="aruba-login-section" >
-				<form>
-				  <label for="fname" style="vertical-align: middle">Email:</label>
-				  <input type="text" name="fname" id="fname" class="required">
+				<form id="login">
+				  <div class="aruba-error" id="error-email"></div>
+				  <label for="email" style="vertical-align: middle">Email:</label>
+				  <input type="text" name="email" id="email" class="required">
 				  <br/><br/>
+				  <div class="aruba-error" id="error-pwd"></div>
 				  <label for="pwd" style="vertical-align: middle">Password:</label>
 				  <input type="password" name="pwd" id="pwd" class="required">
 				  <br/><br/>
 				  <div style="position: relative; margin: auto; width: 30%; text-align: center;">
-					<a class="aruba-button-green" href="index.html" data-ajax="false" data-role="button" data-inline="true">ACCEDI</a>
+					<a class="aruba-button-green" onclick="redirect()" data-ajax="false" data-role="button" data-inline="true">ACCEDI</a>
 				  </div>
 				</form>
 			</div>		
