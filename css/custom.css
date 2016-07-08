@@ -115,15 +115,47 @@ div[data-role=page] {
 
 .wizard, .tabcontrol {
     display: block;
-    width: 60% !important;
+    /*width: 60% !important;*/
     overflow: hidden;
     height: 10%;
     position: relative;
-    left: 20%;
+    /*left: 20%;*/
 }
 
 select {
 	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
 	font-size: 62.5%;
 }
+
+.aruba-control-panel h2 {
+	background:#fd8354;
+	color:white;
+	padding:10px;
+	margin: 0;
+	font-size: 1em;
+	text-align: center;
+}
+
+.aruba-control-panel p {
+	color:#333;
+	padding:10px;
+}
+
+.aruba-control-panel {
+	display: inline-block;
+	margin-left: 1em;
+	border: 1px solid #fd8354;
+	-moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+	position: relative;
+	top: -550px;	
+}
+
+.aruba-post-selling-body {
+	width: 74%;
+	display: inline-block;
+}
+
 
