@@ -7,10 +7,20 @@
 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.css" />
 		<link rel="stylesheet" type="text/css" href="..\css\custom.css" />
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+		<link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/jquery.steps.css">
+		<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.cookie-1.3.1.js"></script>
+        <script type="text/javascript" src="../js/jquery.steps.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/wizard.js"></script>
+
 	</head> 
-	<body> 
+	<body>
 
 	<div data-role="page">
 		<div class="aruba-header-top">
@@ -40,8 +50,61 @@
 		</div>
 
 		<div data-role="content" class="aruba-content">	
-			<p>Ciao cliente!</p>		
-
+			<p>Ciao cliente!</p>
+			<div id="noncelapossofare">
+				<form id="example-advanced-form" action="#">
+					<h3>Account</h3>
+					<fieldset>
+						<legend>Dati richiesta</legend>
+						<label for="hostname">Hostname *</label>
+						<input id="hostname" name="hostname" type="text" class="required">
+						<label for="csr">CSR *</label>
+						<textarea id="csr" rows="4" cols="50"  name="password" type="text" class="required">
+						</textarea>
+						<div>
+							<label for="dcv">DCV</label>
+							<select name="dcv" id="dcv">
+							  <option>email</option>
+							  <option>sito web</option>
+							  <option>record TXT</option>
+							  <option>lettera CA</option>
+							</select>
+						</div>
+					<p>(*) Mandatory</p>
+					</fieldset>
+				 
+					<h3>Profile</h3>
+					<fieldset>
+						<legend>Profile Information</legend>
+				 
+						<label for="name-2">Hostname *</label>
+						<input id="name-2" name="name" type="text" class="required">
+						<label for="surname-2">Last name *</label>
+						<input id="surname-2" name="surname" type="text" class="required">
+						<label for="email-2">Email *</label>
+						<input id="email-2" name="email" type="text" class="required email">
+						<label for="address-2">Address</label>
+						<input id="address-2" name="address" type="text">
+						<label for="age-2">Age (The warning step will show up if age is less than 18) *</label>
+						<input id="age-2" name="age" type="text" class="required number">
+						<p>(*) Mandatory</p>
+					</fieldset>
+				 
+					<h3>Warning</h3>
+					<fieldset>
+						<legend>You are to young</legend>
+				 
+						<p>Please go away ;-)</p>
+					</fieldset>
+				 
+					<h3>Finish</h3>
+					<fieldset>
+						<legend>Terms and Conditions</legend>
+				 
+						<input id="acceptTerms-2" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 		<div class="aruba-footer">
 			<img src="../img/grayLineFull.png" alt="greyLine">
