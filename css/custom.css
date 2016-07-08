@@ -57,7 +57,6 @@ div[data-role=page] {
 }
 
 .aruba-footer {
-	position: absolute;
 	bottom:0;
 	text-align: center;
     width: 100%;
@@ -99,5 +98,19 @@ div[data-role=page] {
 
 .arubaGroupLogo{
     margin-bottom: 12px;
+}
+
+.wizard, .tabcontrol {
+    display: block;
+    width: 60% !important;
+    overflow: hidden;
+    height: 10%;
+    position: relative;
+    left: 20%;
+}
+
+select {
+	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	font-size: 62.5%;
 }
 
