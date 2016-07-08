@@ -2,11 +2,11 @@
 function redirect() {
 	if(validate()){
 		var user = $('#email').val();
-		var userEmail = 'user@aruba.it';
+		var userEmail = 'customer@aruba.it';
 		if(user == userEmail){
 			$(location).attr('href', 'index.html');
 		} else {
-			$(location).attr('href', '..\dashboard\dashboard.html');
+			$(location).attr('href', 'dashboard.html');
 		}
 	}
 }
@@ -16,7 +16,7 @@ function validate() {
 	var pwd = $('#pwd').val();
 	var isValid = true;
 	
-	$('.aruba-error').slideUp('slow');
+	clearAllErrors();
 	
 	if ($.trim(email) == '') {
 		throwError('error-email', 'Inserire l\'indirizzo email utilizzato in fase di registrazione');
@@ -43,5 +43,8 @@ function throwError(target, msg) {
 	var _target = '#' + target;
 	$(_target).html(msg);
 	$(_target).slideDown('slow');
-	//$(_target).css('display', 'block');
+}
+
+function clearAllErrors() {
+	$('.aruba-error').slideUp('slow');
 }

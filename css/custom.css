@@ -61,6 +61,7 @@ div[data-role=page] {
 	text-align: center;
     width: 100%;
     min-width: 920px;
+	position: fixed;
 }
 
 .aruba-login-section {
