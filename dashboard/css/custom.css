@@ -41,12 +41,34 @@
 	width:100%;}
 }
 #accordion-ricerca{
-	padding-left;30px;
-	padding-right;30px;
+	padding-left:30px;
+	padding-right:30px;
 }
 
 .bg-success-aruba { 
   background-color: #ff9635;
 	color: white;  
 }
-				
+
+.ui-state-active{
+	background-image:none;
+	background-color: #ff9635;
+	color: white;  	
+}
+
+ .overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: rgba(0,0,0,0.5);
+  display:none;
+}
+.ui-front{
+	z-index:100000;
+}
+.cmd-image{
+	cursor:pointer;
+	width:15px;
+	height:15px;
+}		

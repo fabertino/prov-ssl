@@ -79,7 +79,17 @@
                     title: 'Stato',
                     width: '15%',
 					sorting: true
-                },
+                }, Remove: {
+                    title: 'ab',
+                    width: '5%',
+                    sorting: false,
+                    edit: false,
+                    create: false,
+                    display: function (studentData) {
+                        var $img = $('<img src="/img/delete.png" title="Revoca" />');
+                        return $img;
+                    }
+                }
 				
             }
         });
