@@ -90,48 +90,52 @@
 				
 			}, fields: {
                 IdPratica: {
-				title: "IdPratica",
-				key: true,
-				create: false,
-				edit: false,
-				sorting: true
-				},
-				TipoCertificato: {
-				title: "TipoCertificato",
-				width: "15%",
+	                title: 'IdPratica',
+                    key: true,
+                    create: false,
+                    edit: false,
 					sorting: true
-				},
-			Cliente: {
-			title: "Cliente",
-			width: "15%",
-			sorting: true
-			},
-			Dominio: {
-			title: "Dominio",
-			width: "15%",
-			sorting: true
-			},
-			Attivazione: {
-			title: "Attivazione",
-			width: "15%",
-			sorting: true
-			},
-			Scadenza: {
-			title: "Scadenza",
-			width: "15%",
-			sorting: true
-			},
-			Durata: {
-			title: "Durata",
-			width: "15%",
-			sorting: true
-			},Stato: {
-			title: "Stato",
-			width: "15%",
-			sorting: true
-			},
-				}
-	});
-$( "#accordion-ricerca" ).accordion();
-$('#studentTableContainer').jtable('load');
-});
+                },
+                TipoCertificato: {
+                    title: 'TipoCertificato',
+                    width: '15%',
+					sorting: true
+                },
+                Cliente: {
+                    title: 'Cliente',
+                    width: '15%',
+					sorting: true
+                },
+                Dominio: {
+                    title: 'Dominio',
+                    width: '15%',
+					sorting: true
+                },
+                Attivazione: {
+                    title: 'Attivazione',
+                    width: '15%',
+					sorting: true
+                },
+				Scadenza: {
+                    title: 'Scadenza',
+                    width: '15%',
+					sorting: true
+                },
+				Durata: {
+                    title: 'Durata',
+                    width: '15%',
+					sorting: true
+                },Stato: {
+                    title: 'Stato',
+                    width: '15%',
+					sorting: true
+                },
+				
+            }
+        });
+		
+		$( "#accordion-ricerca" ).accordion();
+		
+		$('#studentTableContainer').jtable('load');
+
+	    });

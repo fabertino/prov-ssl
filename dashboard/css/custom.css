@@ -40,9 +40,13 @@
 	height:100%;
 	width:100%;}
 }
-
 #accordion-ricerca{
 	padding-left;30px;
 	padding-right;30px;
+}
+
+.bg-success-aruba { 
+  background-color: #ff9635;
+	color: white;  
 }
 				
