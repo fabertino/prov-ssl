@@ -3,7 +3,7 @@
 		var w = $(window).width();
 		var h = $(window).height();
 		$(".overlay").width(w);
-		$(".overlay").height(h);
+		$(".overlay").height(h + 100);
 		$("#dialog-modifica").width(w);
 		$("#dialog-modifica").height(h);
 		

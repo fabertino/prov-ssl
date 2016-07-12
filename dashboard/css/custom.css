@@ -71,4 +71,8 @@
 	cursor:pointer;
 	width:15px;
 	height:15px;
-}		
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
