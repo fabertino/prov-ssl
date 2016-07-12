@@ -50,7 +50,7 @@ $(function ()
 		},
 		onFinished: function (event, currentIndex)
 		{
-			alert("Submitted!");
+			$(window.location).attr('href', 'prodotti.html');
 		}
 	}).validate({
 		errorPlacement: function errorPlacement(error, element) { element.before(error); },
