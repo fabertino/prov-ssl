@@ -218,3 +218,8 @@ legend {
   height: 200px;
   cursor: pointer;
 }
+
+.circle {
+    border-radius: 50%;
+	width: 50px;
+}
