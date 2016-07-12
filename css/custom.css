@@ -195,7 +195,7 @@ input, textarea {
 
 	}
 	
-fieldset {
+fieldset.prodotti {
 	border: 1px solid #c0c0c0 !important;
     margin: 0 2px !important;
     padding: 0.35em 0.625em 0.75em !important;
