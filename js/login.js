@@ -6,7 +6,7 @@ function redirect() {
 		if(user == userEmail){
 			$(location).attr('href', 'index.html');
 		} else {
-			$(location).attr('href', 'dashboard.html');
+			$(location).attr('href', '..\\dashboard\\dashboard.html');
 		}
 	}
 }
