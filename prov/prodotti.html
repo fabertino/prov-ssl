@@ -17,7 +17,6 @@
 		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script type="text/javascript" src="../js/wizard.js"></script>
 
 	</head> 
 	<body>
@@ -29,7 +28,7 @@
 					<ul class="aruba-menu-nav-right">
 						<li>
 							<a href="http:\\www.google.it">Home</a>
-						</li>
+						</li> 
 						<li class="aruba-menu-separator">
 							<a href="http:\\www.google.it">Pagina 2</a>
 						</li>
@@ -51,69 +50,14 @@
 		<div data-role="content" class="aruba-content">	
 			<br/><br/><br/>
 			<div style="display: inline-block; width: 25%">
-				<div id="controlPanel" class="aruba-control-panel">
+				<div id="controlPanel" class="aruba-control-panel" style="top: 0">
 					<h2>PANNELLO DI CONTROLLO</h2>
 					<p>Account</p>
-					<p><a href="prodotti.html">Miei prodotti</a></p>
+					<p>Miei prodotti</p>
 				</div>
 			</div>
 			<div id="aruba-post-selling-body" class="aruba-post-selling-body">
-				<form id="example-advanced-form" action="#">
-					<h3>Dati richiesta</h3>
-					<fieldset>
-						<legend></legend>
-						<label for="hostname"><strong>Hostname</strong></label>
-							<input id="hostname" name="hostname" type="text" class="required">
-						</br>
-						<label for="csr"><strong>CSR</strong></label>
-							<p>Inserisci l'SHA generato qui sotto oppure carica il certificato:</p>
-							<textarea id="csr" rows="4" cols="50"  name="password" type="text" class="required">
-							</textarea>
-							<br/>
-							<input type="file" />
-						<br/>
-						<label for="dcv"><strong>DCV</strong></label>
-						<div>
-							<select name="dcv" id="dcv">
-							  <option>EMAIL</option>
-							  <option>SITO WEB</option>
-							  <option>RECORD TXT</option>
-							  <option>LETTERA CA</option>
-							</select>
-						</div>
-					</fieldset>
-				 
-					<h3>Profile</h3>
-					<fieldset>
-						<legend>Profile Information</legend>
-				 
-						<label for="name-2">Hostname *</label>
-						<input id="name-2" name="name" type="text" class="required">
-						<label for="surname-2">Last name *</label>
-						<input id="surname-2" name="surname" type="text" class="required">
-						<label for="email-2">Email *</label>
-						<input id="email-2" name="email" type="text" class="required email">
-						<label for="address-2">Address</label>
-						<input id="address-2" name="address" type="text">
-						<label for="age-2">Age (The warning step will show up if age is less than 18) *</label>
-						<input id="age-2" name="age" type="text" class="required number">
-						<p>(*) Mandatory</p>
-					</fieldset>
-				 
-					<h3>Warning</h3>
-					<fieldset>
-						<legend>You are to young</legend>
-				 
-						<p>Please go away ;-)</p>
-					</fieldset>
-				 
-					<h3>Finish</h3>
-					<fieldset>
-						<legend>Terms and Conditions</legend>
-				 
-						<input id="acceptTerms-2" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
-					</fieldset>
-				</form>
+				qua ci va la cazzo di tabella di merda
 			</div>
 		</div>
 		<div class="aruba-footer">
