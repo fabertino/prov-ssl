@@ -194,3 +194,27 @@ input, textarea {
 .ui-selectmenu-text  { 
 
 	}
+	
+fieldset {
+	border: 1px solid #c0c0c0 !important;
+    margin: 0 2px !important;
+    padding: 0.35em 0.625em 0.75em !important;
+	border-radius: 10px !important;
+}
+
+legend {
+	font-weight: bold;
+	padding-left: .5em !important;
+	padding-right: .5em !important;
+}
+
+.banner { 
+  background: url(../img/SSl.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  height: 200px;
+  cursor: pointer;
+}
