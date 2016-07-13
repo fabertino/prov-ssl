@@ -1,5 +1,69 @@
     $(document).ready(function () {
-	
+		
+		var w = $(window).width();
+		var h = $(window).height();
+		$(".overlay").width(w);
+		$(".overlay").height(h + 100);
+		$("#dialog-modifica").width(w);
+		$("#dialog-modifica").height(h);
+		
+		$("#dialog-modifica").dialog({
+		  autoOpen: false,
+		  height: $(window).height() - 50,
+		  width: $(window).width() - 50,
+		  buttons: [{
+			  text: "Salva",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			},
+			{
+			  text: "Annula",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			}]
+		});	
+
+		$("#dialog-rinnova").dialog({
+		  autoOpen: false,
+		  title: "Rinnova certificato",
+		  buttons: [{
+			  text: "Salva",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			},
+			{
+			  text: "Annula",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			}]
+		});	
+		
+		$("#dialog-revoca").dialog({
+		  autoOpen: false,
+		  buttons: [{
+			  text: "Salva",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			},
+			{
+			  text: "Annula",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			}]
+		});	
+		
 		$("#carousel").carousel({
 			pause: true,
 			interval: false
@@ -129,7 +193,49 @@
                     title: 'Stato',
                     width: '15%',
 					sorting: true
-                },
+                }, Renew: {
+                    title: '',
+                    width: '5%',
+                    sorting: false,
+                    edit: false,
+                    create: false,
+                    display: function (studentData) {
+                        var $img = $('<img src="img/new.png" class="cmd-image" title="Rinnova" />');
+						$img.click(function(){
+							$(".overlay").show();
+							$( "#dialog-rinnova" ).dialog( "open" );
+						});
+                        return $img;
+                    }
+                }, Edit: {
+                    title: '',
+                    width: '5%',
+                    sorting: false,
+                    edit: false,
+                    create: false,
+                    display: function (studentData) {
+                        var $img = $('<img src="img/modifica.png" class="cmd-image" title="Modifica" />');
+						$img.click(function(){
+							$(".overlay").show();
+							$( "#dialog-modifica" ).dialog( "open" );
+						});
+                        return $img;
+                    }
+                }, Remove: {
+                    title: '',
+                    width: '5%',
+                    sorting: false,
+                    edit: false,
+                    create: false,
+                    display: function (studentData) {
+                        var $img = $('<img src="img/delete.png" class="cmd-image" title="Revoca" />');
+						$img.click(function(){
+							$(".overlay").show();
+							$( "#dialog-revoca" ).dialog( "open" );
+						});
+                        return $img;
+                    }
+                }
 				
             }
         });
