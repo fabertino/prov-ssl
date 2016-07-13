@@ -109,7 +109,7 @@ div[data-role=page] {
 }
 
 .arubaGroupLogo{
-    margin-bottom: 12px;
+    /*margin-bottom: 12px;*/
 }
 
 .wizard, .tabcontrol {

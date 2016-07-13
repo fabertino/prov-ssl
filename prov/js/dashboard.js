@@ -60,23 +60,6 @@
                     title: 'Durata (gg)',
                     width: '10%',
 					sorting: true
-<<<<<<< HEAD
-                },Stato: {
-                    title: 'Stato',
-                    width: '15%',
-					sorting: true
-                }, Remove: {
-                    title: 'ab',
-                    width: '5%',
-                    sorting: false,
-                    edit: false,
-                    create: false,
-                    display: function (studentData) {
-                        var $img = $('<img src="/img/delete.png" title="Revoca" />');
-                        return $img;
-                    }
-=======
->>>>>>> e7cf537ac70791e6a64b6e495e542ed7aa91fa2c
                 }
 				
             }
