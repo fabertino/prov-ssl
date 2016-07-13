@@ -154,44 +154,44 @@
 				
 			}, fields: {
                 IdPratica: {
-	                title: 'IdPratica',
+	Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'IdPratica',
                     key: true,
                     create: false,
                     edit: false,
 					sorting: true
                 },
                 TipoCertificato: {
-                    title: 'TipoCertificato',
-                    width: '15%',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'TipoCertificato',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 },
                 Cliente: {
-                    title: 'Cliente',
-                    width: '15%',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'Cliente',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 },
                 Dominio: {
-                    title: 'Dominio',
-                    width: '15%',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'Dominio',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 },
                 Attivazione: {
-                    title: 'Attivazione',
-                    width: '15%',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'Attivazione',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 },
 				Scadenza: {
-                    title: 'Scadenza',
-                    width: '15%',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'Scadenza',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 },
 				Durata: {
-                    title: 'Durata',
-                    width: '15%',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'Durata',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 },Stato: {
-                    title: 'Stato',
-                    width: '15%',
+   Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â title: 'Stato',
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â width: '15%',
 					sorting: true
                 }, Renew: {
                     title: '',
