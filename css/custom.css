@@ -104,12 +104,12 @@ div[data-role=page] {
 .copyrightBottomDescription {  
     vertical-align: top;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 11px;
     margin-left: 10px;
 }
 
 .arubaGroupLogo{
-    /*margin-bottom: 12px;*/
+    margin-bottom: 12px;
 }
 
 .wizard, .tabcontrol {
