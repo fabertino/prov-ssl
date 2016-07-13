@@ -2,31 +2,20 @@
 		var jsonArray = {
 					"Result": "OK",
 					"Records": [
-						{ "IdPratica": 123456, "TipoCertificato": "DV", "Cliente": 18, "Dominio": 55, "Attivazione": "Scadenza Garcia", "Scadenza": "agatha.garcia@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123457, "TipoCertificato": "DV", "Cliente": 1, "Dominio": 1, "Attivazione": "Scadenza Lafore", "Scadenza": "agatha.lafore@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123458, "TipoCertificato": "DV", "Cliente": 18, "Dominio": 55, "Attivazione": "Scadenza Garcia", "Scadenza": "agatha.garcia@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123459, "TipoCertificato": "OV", "Cliente": 1, "Dominio": 1, "Attivazione": "Scadenza Lafore", "Scadenza": "agatha.lafore@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123460, "TipoCertificato": "OV", "Cliente": 18, "Dominio": 55, "Attivazione": "Scadenza Garcia", "Scadenza": "agatha.garcia@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123461, "TipoCertificato": "OV", "Cliente": 1, "Dominio": 1, "Attivazione": "Scadenza Lafore", "Scadenza": "agatha.lafore@jtable.org", "Durata": "123", "Stato": "F"},						
-						{ "IdPratica": 123462, "TipoCertificato": "EV", "Cliente": 1, "Dominio": 1, "Attivazione": "Scadenza Lafore", "Scadenza": "agatha.lafore@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123463, "TipoCertificato": "EV", "Cliente": 18, "Dominio": 55, "Attivazione": "Scadenza Garcia", "Scadenza": "agatha.garcia@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123464, "TipoCertificato": "EV", "Cliente": 1, "Dominio": 1, "Attivazione": "Scadenza Lafore", "Scadenza": "agatha.lafore@jtable.org", "Durata": "123", "Stato": "F"},						
+						{ "IdPratica": 123456, "Prodotto": "Certificato DV", "StatoAttivazione": "IN LAVORAZIONE", "DataRichiesta": "01/01/2016", "DataUltimaModifica": "02/01/2016", "Durata": "30"},
+						{ "IdPratica": 123457, "Prodotto": "Certificato DV", "StatoAttivazione": "RIFIUTATO","DataRichiesta": "01/06/2016", "DataUltimaModifica": "02/06/2016", "Durata": "25"},
+						{ "IdPratica": 123458, "Prodotto": "Certificato DV", "StatoAttivazione": "ATTIVO", "DataRichiesta": "01/01/2016", "DataUltimaModifica": "02/01/2016", "Durata": "365"},
+						{ "IdPratica": 123459, "Prodotto": "Certificato OV", "StatoAttivazione": "ATTIVO","DataRichiesta": "01/06/2016", "DataUltimaModifica": "02/06/2016", "Durata": "730"},
+						{ "IdPratica": 123460, "Prodotto": "Certificato OV", "StatoAttivazione": "ATTIVO", "DataRichiesta": "01/01/2016", "DataUltimaModifica": "02/01/2016", "Durata": "10"},
+						{ "IdPratica": 123461, "Prodotto": "Certificato OV", "StatoAttivazione": "ATTIVO","DataRichiesta": "01/06/2016", "DataUltimaModifica": "02/06/2016", "Durata": "1"},						
+						{ "IdPratica": 123462, "Prodotto": "Certificato EV", "StatoAttivazione": "SCADUTO","DataRichiesta": "01/06/2016", "DataUltimaModifica": "02/06/2016", "Durata": "0"},
+						{ "IdPratica": 123463, "Prodotto": "Certificato EV", "StatoAttivazione": "ATTIVO", "DataRichiesta": "01/01/2016", "DataUltimaModifica": "02/01/2016", "Durata": "365"},
+						{ "IdPratica": 123464, "Prodotto": "Certificato EV", "StatoAttivazione": "ATTIVO","DataRichiesta": "01/06/2016", "DataUltimaModifica": "02/06/2016", "Durata": "365"},						
 						],
 						"TotalRecordCount": 9};
+				
+				
 
-			$("#cert-dv-ball").on("click",function(){
-				jsonArray = {
-					"Result": "OK",
-					"Records": [
-						{ "IdPratica": 123456, "TipoCertificato": "DV", "Cliente": 18, "Dominio": 55, "Attivazione": "Scadenza Garcia", "Scadenza": "agatha.garcia@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123457, "TipoCertificato": "DV", "Cliente": 1, "Dominio": 1, "Attivazione": "Scadenza Lafore", "Scadenza": "agatha.lafore@jtable.org", "Durata": "123", "Stato": "F"},
-						{ "IdPratica": 123458, "TipoCertificato": "DV", "Cliente": 18, "Dominio": 55, "Attivazione": "Scadenza Garcia", "Scadenza": "agatha.garcia@jtable.org", "Durata": "123", "Stato": "F"},
-						],
-						"TotalRecordCount": 3};				
-			$('#studentTableContainer').jtable('load');
-				
-				
-			});
 			
 			$("#studentTableContainer").jtable({
 				paging: true, //Enable paging
@@ -40,41 +29,38 @@
 				
 			}, fields: {
                 IdPratica: {
-	                title: 'IdPratica',
+	                title: 'Numero Pratica',
+					width: '20%',
                     key: true,
                     create: false,
                     edit: false,
 					sorting: true
                 },
-                TipoCertificato: {
-                    title: 'TipoCertificato',
+                Prodotto: {
+                    title: 'Prodotto',
                     width: '15%',
 					sorting: true
                 },
-                Cliente: {
-                    title: 'Cliente',
+                StatoAttivazione: {
+                    title: 'Stato Attivazione',
                     width: '15%',
 					sorting: true
                 },
-                Dominio: {
-                    title: 'Dominio',
+                DataRichiesta: {
+                    title: 'Data Richiesta',
                     width: '15%',
 					sorting: true
                 },
-                Attivazione: {
-                    title: 'Attivazione',
-                    width: '15%',
-					sorting: true
-                },
-				Scadenza: {
-                    title: 'Scadenza',
+				DataUltimaModifica: {
+                    title: 'Data Ultima Modifica',
                     width: '15%',
 					sorting: true
                 },
 				Durata: {
-                    title: 'Durata',
-                    width: '15%',
+                    title: 'Durata (gg)',
+                    width: '10%',
 					sorting: true
+<<<<<<< HEAD
                 },Stato: {
                     title: 'Stato',
                     width: '15%',
@@ -89,6 +75,8 @@
                         var $img = $('<img src="/img/delete.png" title="Revoca" />');
                         return $img;
                     }
+=======
+>>>>>>> e7cf537ac70791e6a64b6e495e542ed7aa91fa2c
                 }
 				
             }

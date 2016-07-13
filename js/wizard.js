@@ -1,5 +1,6 @@
 $(function ()
 {
+	$( "#dcv" ).selectmenu();
 	var form = $("#example-advanced-form").show();
 
 	form.steps({
@@ -12,11 +13,6 @@ $(function ()
 			if (currentIndex > newIndex)
 			{
 				return true;
-			}
-			// Forbid next action on "Warning" step if the user is to young
-			if (newIndex === 3 && Number($("#age-2").val()) < 18)
-			{
-				return false;
 			}
 			// Needed in some cases if the user went back (clean up)
 			if (currentIndex < newIndex)
@@ -31,7 +27,7 @@ $(function ()
 		onStepChanged: function (event, currentIndex, priorIndex)
 		{
 			// Used to skip the "Warning" step if the user is old enough.
-			if (currentIndex === 2 && Number($("#age-2").val()) >= 18)
+			if (currentIndex === 2 && currentIndex >= 18)
 			{
 				form.steps("next");
 			}
@@ -39,6 +35,12 @@ $(function ()
 			if (currentIndex === 2 && priorIndex === 3)
 			{
 				form.steps("previous");
+			}
+			if (currentIndex == 2)
+			{
+				$('#r_hostname').text($('#hostname').val());
+				$('#r_csr').text($('#csr').val());
+				$('#r_dcv').text($('#dcv').val());
 			}
 		},
 		onFinishing: function (event, currentIndex)
@@ -58,5 +60,4 @@ $(function ()
 			}
 		}
 	});
-	$( "#dcv" ).selectmenu();
 });

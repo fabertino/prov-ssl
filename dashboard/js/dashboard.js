@@ -12,7 +12,14 @@
 		  height: $(window).height() - 50,
 		  width: $(window).width() - 50,
 		  buttons: [{
-			  text: "Chiudi",
+			  text: "Salva",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			},
+			{
+			  text: "Annula",
 			  click: function() {
 				$( this ).dialog( "close" );
 				$(".overlay").hide();
@@ -22,8 +29,16 @@
 
 		$("#dialog-rinnova").dialog({
 		  autoOpen: false,
+		  title: "Rinnova certificato",
 		  buttons: [{
-			  text: "Chiudi",
+			  text: "Salva",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			},
+			{
+			  text: "Annula",
 			  click: function() {
 				$( this ).dialog( "close" );
 				$(".overlay").hide();
@@ -34,7 +49,14 @@
 		$("#dialog-revoca").dialog({
 		  autoOpen: false,
 		  buttons: [{
-			  text: "Chiudi",
+			  text: "Salva",
+			  click: function() {
+				$( this ).dialog( "close" );
+				$(".overlay").hide();
+			  }
+			},
+			{
+			  text: "Annula",
 			  click: function() {
 				$( this ).dialog( "close" );
 				$(".overlay").hide();
